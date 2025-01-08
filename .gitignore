@@ -1,0 +1,50 @@
+# Maven build directory
+target/
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IDE - Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# IDE - VS Code
+.vscode/
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Minecraft server test directory (if you test locally)
+test-server/
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Dependency reduced pom
+dependency-reduced-pom.xml
+
+# Debug files
+*.debug 

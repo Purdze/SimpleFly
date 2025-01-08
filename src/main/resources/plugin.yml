@@ -1,0 +1,48 @@
+name: SimpleFly
+version: '${project.version}'
+main: dev.purdze.simplefly.SimpleFly
+api-version: 1.13
+authors: [Purdze]
+description: A simple flight plugin
+commands:
+  simplefly:
+    aliases: [sf]
+    description: Main command for SimpleFly
+    usage: /<command> [player|help|reload|speed <1-10>]
+    permission: simplefly.use
+permissions:
+  simplefly.use:
+    description: Allows players to toggle their own flight
+    default: op
+  simplefly.others:
+    description: Allows players to toggle flight for other players
+    default: op
+  simplefly.duration:
+    description: Allows players to set temporary flight duration
+    default: op
+  simplefly.speed:
+    description: Allows players to change their flight speed
+    default: op
+  simplefly.reload:
+    description: Allows players to reload the plugin configuration
+    default: op
+  simplefly.bypass.combat:
+    description: Allows players to bypass combat flight restrictions
+    default: op
+  simplefly.speed.others:
+    description: Allows players to change other players' flight speed
+    default: op
+  simplefly.*:
+    description: Gives access to all SimpleFly commands
+    default: op
+    children:
+      simplefly.use: true
+      simplefly.others: true
+      simplefly.duration: true
+      simplefly.speed: true
+      simplefly.reload: true
+      simplefly.bypass.combat: true
+      simplefly.speed.others: true
+  simplefly.updates:
+    description: Allows players to receive update notifications
+    default: op 

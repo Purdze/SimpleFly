@@ -1,0 +1,13 @@
+# Settings
+config-version: "1.1.0"
+settings:
+  # Customize the plugin's prefix (supports color codes with &)
+  prefix: "&7[&6SimpleFly&7] "
+  # Should flight state be saved after server restart?
+  persist-flight-state: true
+  # Should flight be disabled when players enter combat?
+  disable-flight-in-combat: true
+  # How long should combat tag last (in seconds)?
+  combat-cooldown: 10
+  # Default flight speed when using /fly (1-10)
+  default-flight-speed: 1 
